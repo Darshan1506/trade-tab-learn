@@ -1,0 +1,58 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans Devanagari', sans-serif;  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* justify-content: center; 
+  align-items: center;  */
+}
+
+.bull-img-container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  margin-right: 10%; 
+}
+
+.quote-container {
+  position: relative;
+  text-align: center;
+  width: 40%; 
+  margin-left: 20%;
+  margin-top: 5%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px; 
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.quote-container::after {
+  content: ''; 
+  position: absolute;
+  top: 100%; 
+  right: 20px; 
+  border-width: 15px; 
+  border-style: solid; 
+  border-color: white transparent transparent transparent; /* Color of the arrow (pointing down) */
+  transform: translateY(0); 
+}
+
+.quote-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333; 
+}
+
+.footer{
+  display: flex;
+  justify-content: end;
+  margin-right: 2%;
+}
